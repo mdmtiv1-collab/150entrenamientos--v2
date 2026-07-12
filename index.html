@@ -262,6 +262,18 @@
             text-align: center;
             padding: 10px 0;
         }
+        @media (max-width: 767px) {
+            /* Reduce padding on the orange banner container on mobile to maximize text width */
+            .elementor-13 .elementor-element.elementor-element-c897417 {
+                padding: 15px 10px !important;
+            }
+            /* Adjust the headline font size and line height so it fits in 2 lines and is well distributed */
+            .elementor-13 .elementor-element.elementor-element-04518e6 .elementor-heading-title {
+                font-size: clamp(18px, 5.2vw, 22px) !important;
+                line-height: 1.3 !important;
+                letter-spacing: -0.5px !important;
+            }
+        }
     </style>
 </head>
 <body class="home wp-singular page-template page-template-elementor_canvas page page-id-13 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-13">
