@@ -14,26 +14,16 @@
     <link rel="preconnect" href="https://meuprimeirolow.com.br" crossorigin />
     <link rel="dns-prefetch" href="https://meuprimeirolow.com.br" />
 
-    <!-- Google Fonts -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=DM+Sans:wght@400;500;700;900&family=Inter:wght@400;500;600;700;900&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=DM+Sans:wght@400;500;700;900&family=Inter:wght@400;500;600;700;900&display=swap">
+    <!-- Google Fonts (Non-blocking) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=DM+Sans:wght@400;500;700;900&family=Inter:wght@400;500;600;700;900&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=DM+Sans:wght@400;500;700;900&family=Inter:wght@400;500;600;700;900&display=swap" />
+    </noscript>
 
-    <!-- CSS stylesheets from meuprimeirolow.com.br to preserve layout/style 100% -->
-    <link rel="stylesheet" href="https://meuprimeirolow.com.br/wp-content/cache/min/1/wp-content/themes/hello-elementor/assets/css/reset.css?ver=1782505263" media="all" />
-    <link rel="stylesheet" href="https://meuprimeirolow.com.br/wp-content/cache/min/1/wp-content/themes/hello-elementor/assets/css/theme.css?ver=1782505263" media="all" />
-    <link rel="stylesheet" href="https://meuprimeirolow.com.br/wp-content/cache/min/1/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=1782505263" media="all" />
-    <link rel="stylesheet" href="https://meuprimeirolow.com.br/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.1.4" media="all" />
-    <link rel="stylesheet" href="https://meuprimeirolow.com.br/wp-content/uploads/elementor/css/post-6.css?ver=1782505263" media="all" />
-    <link rel="stylesheet" href="https://meuprimeirolow.com.br/wp-content/uploads/elementor/css/post-13.css?ver=1783713920" media="all" />
-    <link rel="stylesheet" href="https://meuprimeirolow.com.br/wp-content/uploads/elementor/css/base-desktop.css?ver=6a3edf3487233" media="all" />
-
-    <!-- Widget Specific CSS (Standard Elementor Widget CSS files) -->
-    <link rel="stylesheet" href="https://meuprimeirolow.com.br/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=4.1.4" media="all" />
-    <link rel="stylesheet" href="https://meuprimeirolow.com.br/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=4.1.4" media="all" />
-    <link rel="stylesheet" href="https://meuprimeirolow.com.br/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css?ver=4.1.4" media="all" />
-    <link rel="stylesheet" href="https://meuprimeirolow.com.br/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=4.1.4" media="all" />
-    <link rel="stylesheet" href="https://meuprimeirolow.com.br/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=4.1.4" media="all" />
-    <link rel="stylesheet" href="https://meuprimeirolow.com.br/wp-content/plugins/elementor/assets/css/widget-nested-accordion.min.css?ver=4.1.4" media="all" />
+    <!-- Combined stylesheet served locally (Zero external render-blocking style requests) -->
+    <link rel="stylesheet" href="all_styles.css" />
 
     <style>
         /* Custom overrides to match basketball theme and fix local layouts */
