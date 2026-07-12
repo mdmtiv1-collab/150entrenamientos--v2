@@ -14,10 +14,13 @@
     <link rel="preconnect" href="https://meuprimeirolow.com.br" crossorigin />
     <link rel="dns-prefetch" href="https://meuprimeirolow.com.br" />
 
-    <!-- Google Fonts (Synchronous to prevent Cumulative Layout Shift) -->
+    <!-- Google Fonts (Non-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=DM+Sans:wght@400;500;700;900&family=Inter:wght@400;500;600;700;900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=DM+Sans:wght@400;500;700;900&family=Inter:wght@400;500;600;700;900&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=DM+Sans:wght@400;500;700;900&family=Inter:wght@400;500;600;700;900&display=swap" />
+    </noscript>
 
     <!-- Combined stylesheet served locally (Zero external render-blocking style requests) -->
     <style id="merged-elementor-styles">
@@ -708,7 +711,7 @@ body.elementor-page-13 .preco-riscado::after {
                     </div>
                 </div>
                 <div class="elementor-element elementor-element-b64d9c2 elementor-widget elementor-widget-image" data-id="b64d9c2" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
-                    <img fetchpriority="high" decoding="async" width="750" height="900" src="hero.webp" class="attachment-large size-large wp-image-517" alt="Hero Baloncesto" style="border-radius:12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);" />
+                    <img fetchpriority="high" decoding="async" width="750" height="900" src="hero.webp" class="attachment-large size-large wp-image-517" alt="Hero Baloncesto" style="border-radius:12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); width: 100%; height: auto;" />
                 </div>
             </div>
         </div>
